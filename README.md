@@ -51,16 +51,16 @@ A modern Android app that displays the top 100 albums from the iTunes RSS feed. 
 <details>
 <summary>Click to expand</summary>
 
-com.example.topalbumsapp/
-├── models/ # DTOs and domain models
-├── repositories/ # Repository + mapper
-├── services/ # Retrofit API
-├── network/ # Interceptors and network layer
-├── features/
-│ └── ui/ # UI: Fragments, ViewModels, Adapters
-├── di/ # Dependency injection setup
-├── utils/ # Binding adapters, constants, helpers
-└── MainApplication.kt
+com.example.topalbumsapp/<br>
+├── models/           # DTOs and domain models<br>
+├── repositories/     # Repository + mapper<br>
+├── services/         # Retrofit API<br>
+├── network/          # Interceptors and network layer<br>
+├── features/<br>
+├── ui/               # UI: Fragments, ViewModels, Adapters<br>
+├── di/               # Dependency injection setup<br>
+├── utils/            # Binding adapters, constants, helpers<br>
+└── MainApplication.kt<br>
 
 </details>
 
