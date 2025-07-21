@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/albumListFragment">
+
+    <fragment
+        android:id="@+id/albumListFragment"
+        android:name="com.example.topalbumsapp.features.ui.AlbumListFragment"
+        android:label="AlbumListFragment">
+        <action
+            android:id="@+id/action_albumListFragment_to_albumDetailsFragment"
+            app:destination="@id/albumDetailsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/albumDetailsFragment"
+        android:name="com.example.topalbumsapp.features.ui.AlbumDetailsFragment"
+        android:label="AlbumDetailsFragment">
+
+        <argument
+            android:name="album"
+            app:argType="com.example.topalbumsapp.models.Album" />
+
+    </fragment>
+
+</navigation>

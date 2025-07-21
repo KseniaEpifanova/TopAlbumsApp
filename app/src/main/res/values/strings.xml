@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Top iTunes Albums</string>
+    <string name="album_cover">Album cover image</string>
+    <string name="viewbinding_access_error">ViewBinding accessed before onCreateView or after onDestroyView</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="genre">Genre:\t</string>
+    <string name="price">Price:\t</string>
+    <string name="release_date">Release Date:\t</string>
+    <string name="artist">Artist:\t</string>
+</resources>
