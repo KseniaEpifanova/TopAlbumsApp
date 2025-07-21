@@ -8,7 +8,9 @@ import com.example.topalbumsapp.models.Album
 import com.example.topalbumsapp.repositories.AlbumsRepository
 import com.example.topalbumsapp.utils.ErrorHandler
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 @HiltViewModel
@@ -33,7 +35,10 @@ class AlbumListViewModel @Inject constructor(
         viewModelScope.launch {
             _isLoading.value = true
 
-            val result = repository.getAlbums()
+            val result = withContext(Dispatchers.IO) {
+                repository.getAlbums()
+            }
+
             _isLoading.value = false
 
             result.fold(

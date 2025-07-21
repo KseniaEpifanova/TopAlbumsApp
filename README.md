@@ -56,7 +56,8 @@ com.example.topalbumsapp/
 ├── repositories/ # Repository + mapper
 ├── services/ # Retrofit API
 ├── network/ # Interceptors and network layer
-├── features/ui/ # UI: Fragments, ViewModels, Adapters
+├── features/
+│ └── ui/ # UI: Fragments, ViewModels, Adapters
 ├── di/ # Dependency injection setup
 ├── utils/ # Binding adapters, constants, helpers
 └── MainApplication.kt
